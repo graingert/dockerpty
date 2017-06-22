@@ -76,6 +76,7 @@ Feature: Attaching to a docker container with stdin open
       """
 
 
+  @skip3
   Scenario: Closing input
     Given I am using a TTY
     And I run "/bin/cat" in a docker container with stdin open
